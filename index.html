@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Puzzle Hacker 🎄</title>
+<style>
+    body { background:#000; color:#0f0; font-family:monospace; text-align:center; padding-top:100px; }
+    input { background:#111; border:1px solid #0f0; color:#0f0; padding:6px; font-size:18px; width:150px; }
+    .hidden { display:none; margin-top:20px; }
+</style>
+</head>
+<body>
+
+<h2>💻 Puzzle Navideño - Es facilito Facu :3 </h2>
+<p>Ingresá la clave correcta 😁</p>
+
+<input id="ans" placeholder="Clave">
+<button onclick="check()">OK</button>
+
+<div id="msg" class="hidden">
+    <h1>🎄 ¡Feliz Navidad Facuuu! 🎁</h1>
+    <p>Un abrazo grande 🤗 y que la sigas rompiendo en este nuevo año!✨</p>
+    <p>PD: Trabajar duro en algo es un talento en sí mismo. Alphonse Elric.</p>
+</div>
+
+<script>
+console.log("Pista secreta → clave = no_olvidar_3_oct_10");
+function check() {
+    if (document.getElementById('ans').value === "no_olvidar_3_oct_10") {
+        document.getElementById('msg').style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
